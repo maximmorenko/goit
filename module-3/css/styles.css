@@ -1,0 +1,59 @@
+html {
+    box-sizing: border-box;
+  }
+  *,
+  *::before,
+  *::after {
+    box-sizing: inherting;
+  }
+  
+  img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+  }
+  .main-nav {
+    width: 901px;
+    margin: 0 auto;
+    background-color: #ffffff;  
+  }
+  
+  .container {
+    width: 901px;
+    margin: 0 auto;
+    background-color: #008080;
+    }
+  .maim-menu {
+    margin-top: 77px;
+    margin-bottom: 103px;
+    padding: 0;
+    font-size: 14px;
+    list-style: none;
+  }
+  .maim-menu a:hover {
+    color:#03a9f4;
+  }
+  
+  
+  .maim-menu li {
+    display: inline-block;
+  }
+  .maim-menu a {
+    color: #989898;
+    font-weight: 578px;
+    text-transform: uppercase;
+    text-decoration: none;
+    line-height: 14px;
+  }
+  .maim-menu-lifestyle {
+    margin-right: 126px;
+    margin-left: 156px;
+  }
+  
+  .maim-menu-photodiary {
+   margin-right: 108px; 
+  }
+  
+  .maim-menu-music {
+    margin-right: 95px;
+  }
