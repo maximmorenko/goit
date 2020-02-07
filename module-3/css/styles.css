@@ -40,10 +40,10 @@ html {
   }
   .maim-menu a {
     color: #989898;
-    font-weight: 578px;
     text-transform: uppercase;
     text-decoration: none;
     line-height: 14px;
+    font-family: 'Playfair Display', serif;
   }
   .maim-menu-lifestyle {
     margin-right: 126px;
