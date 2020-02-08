@@ -30,10 +30,11 @@ html {
     font-size: 14px;
     list-style: none;
   }
-  .maim-menu a:hover {
+  .maim-menu a:hover,
+  .maim-menu a:focus {
     color:#03a9f4;
   }
-  
+   
   
   .maim-menu li {
     display: inline-block;
