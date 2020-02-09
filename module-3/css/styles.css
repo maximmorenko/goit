@@ -1,31 +1,17 @@
-html {
-    box-sizing: border-box;
-  }
-  *,
-  *::before,
-  *::after {
-    box-sizing: inherting;
-  }
-  
-  img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-  }
+/* * {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box; 
+} */
   .main-nav {
-    width: 901px;
+    width: 900px;
     margin: 0 auto;
     background-color: #ffffff;  
   }
-  
-  .container {
-    width: 901px;
-    margin: 0 auto;
-    background-color: #008080;
-    }
+  /* maim-menu */
   .maim-menu {
-    margin-top: 77px;
-    margin-bottom: 103px;
+    margin-top: 76px;
+    margin-bottom: 102px;
     padding: 0;
     font-size: 14px;
     list-style: none;
@@ -33,9 +19,7 @@ html {
   .maim-menu a:hover,
   .maim-menu a:focus {
     color:#03a9f4;
-  }
-   
-  
+  } 
   .maim-menu li {
     display: inline-block;
   }
@@ -52,9 +36,63 @@ html {
   }
   
   .maim-menu-photodiary {
-   margin-right: 108px; 
+    margin-right: 108px; 
   }
   
   .maim-menu-music {
-    margin-right: 95px;
+    margin-right: 94px;
   }
+ /* container */
+  .container {
+    width: 900px;
+    margin: 0 auto;
+    font-size: 0;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: serif;
+    font-size: 14px;
+    color: #626262;    
+}
+  .container-list-item {
+    display: inline-block;
+    width: 420px;
+    height: 280px;
+    padding: 0px;
+    margin-right: 60px;
+    margin-bottom: 336px;
+}
+.container-list-item:nth-child(2n) {
+  margin-right: 0px;
+}
+.border-box {
+box-sizing: border-box; 
+background-color: aqua;
+display: inline-block;     
+}
+.container-list-img {
+  width: 420px;
+  margin-bottom: 25px;
+}
+.container-list-theme {
+  font-family: "Ubuntu", sans-serif;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: #b4ad9e;
+}
+.container-list-title {
+  margin-top: 16px;
+  margin-bottom: 30px;
+  font-weight: 400;
+  font-size: 30px;
+  color: #626262;
+}
+.container-list-text {
+  line-height: 24px;
+  /* width: 420px;
+  font-size: 14px;
+  color: #626262; */
+}
+
