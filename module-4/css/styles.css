@@ -1,0 +1,137 @@
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.clearfix::after {
+  display: table;
+  content: "";
+  clear: both;
+}
+.main-nav {
+  width: 1170px;
+  margin: 0 auto;
+  margin-bottom: 105px;
+  margin-top: 38px;
+  /* background-color: #fcdddd;   */
+  }
+  .site-logo {
+    display: inline-block;
+    /* width: 76px;
+    height: 22px; */
+    margin: 0px;
+    margin-left: 30px;
+    padding: 0px;
+
+  }
+  /* maim-menu */
+.maim-menu {
+  float: right;
+width: 510px;
+/* background-color: aqua; */
+margin: 0px;
+margin-top: 4px;
+padding: 0px;
+font-size: 14px;
+list-style: none;
+  }
+/* .maim-menu a:hover,
+.maim-menu a:focus {
+  color:#03a9f4;
+  }  */
+.maim-menu li {
+float: left;   
+  }
+.maim-menu a {
+  color: #0f0101;
+  text-transform: uppercase;
+  text-decoration: none;
+  line-height: 14px;
+  font-family: 'Open Sans:700', sans-serif;
+}
+.maim-menu-home {
+  margin-right: 34px;
+  }
+  
+.maim-menu-about_us {
+  margin-right: 38px;
+  }
+  
+.maim-menu-page {
+  margin-right: 32px;
+  }
+.maim-menu-shop {
+  margin-right: 28px;
+  }
+.maim-menu-blog {
+  margin-right: 28px;
+  }
+.maim-menu-contact_us {
+  margin-right: 30px;
+  }
+ /* container */
+.container {
+  width: 1170px;
+  margin: 0 auto;
+
+  }
+/* * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Playfair Display', serif;
+  font-size: 14px;
+  color: #626262;    
+} */
+.container-list-item {
+  width: 255px;
+  height: 322px;
+  padding: 0px;
+  /* margin-right: 60px;
+  margin-bottom: 336px; */
+}
+/* .container-list-item:nth-child(2n) {
+  margin-right: 0px;
+} */
+/* .container-list-img {
+  width: 420px;
+  margin-bottom: 25px;
+} */
+.container-list-theme {
+  font-family: "Ubuntu", sans-serif;
+  text-transform: uppercase;
+  font-weight: 300;
+  color: #b4ad9e;
+}
+.container-list-title {
+  margin-top: 16px;
+  margin-bottom: 30px;
+  font-weight: 400;
+  font-size: 30px;
+  color: #626262;
+}
+.container-list-text {
+  line-height: 24px;
+  /* width: 420px;
+  font-size: 14px;
+  color: #626262; */
+}
+.container-list-item:nth-last-child(-n + 3) {
+  margin-bottom: 252px;
+}
+.button-wrapper {
+  padding-bottom: 70px;
+  text-align: center;
+}
+.button {
+  padding: 16px 32px;
+  display: inline-block;
+  border: 1px solid #626262;
+  font-size: 20px;
+}
+/* .button:hover,
+.button:focus {
+  color:#03a9f4;
+  } */
+
+
