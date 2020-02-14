@@ -13,28 +13,40 @@ img {
   margin: 0 auto;
   margin-bottom: 105px;
   margin-top: 38px;
-  /* background-color: #fcdddd;   */
+  /* background-color: aqua; */
   }
+
   .site-logo {
     display: inline-block;
-    /* width: 76px;
-    height: 22px; */
     margin: 0px;
     margin-left: 30px;
     padding: 0px;
-
-  }
+}
+.site-logo {
+  font-size: 30px;
+  font-family: Roboto;
+  font-weight: 100;
+  text-transform: uppercase;
+  float: left;
+  /* margin-top: 38px; */
+}
+.site-logo::first-letter {
+  color: rgb(26, 188, 156);
+  font-weight: 900;
+}
   /* maim-menu */
 .maim-menu {
   float: right;
 width: 510px;
-/* background-color: aqua; */
 margin: 0px;
-margin-top: 4px;
+margin-top: 12px;
 padding: 0px;
 font-size: 14px;
 list-style: none;
   }
+.maim-menu-link:hover {
+  color: rgb(26, 188, 156);
+}
 /* .maim-menu a:hover,
 .maim-menu a:focus {
   color:#03a9f4;
@@ -47,7 +59,8 @@ float: left;
   text-transform: uppercase;
   text-decoration: none;
   line-height: 14px;
-  font-family: 'Open Sans:700', sans-serif;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 700;
 }
 .maim-menu-home {
   margin-right: 34px;
