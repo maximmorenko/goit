@@ -1,3 +1,11 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 img {
   display: block;
   max-width: 100%;
@@ -13,7 +21,7 @@ img {
   margin: 0 auto;
   margin-bottom: 105px;
   margin-top: 38px;
-  /* background-color: aqua; */
+  background-color: aqua;
   }
 
   .site-logo {
@@ -86,6 +94,7 @@ float: left;
 .container {
   width: 1170px;
   margin: 0 auto;
+  background-color: lightcoral;
 
   }
 /* * {
