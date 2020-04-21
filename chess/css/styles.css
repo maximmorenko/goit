@@ -1,0 +1,29 @@
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.clearfix::after {
+  display: table;
+  content: "";
+  clear: both;
+}
+/* chess */
+.parent {
+  width: 640px;
+  height: 640px;
+  background-color: black;
+}
+.child {
+  width: 80px;
+  height: 80px;
+  background-color: blueviolet;
+}
