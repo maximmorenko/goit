@@ -17,13 +17,38 @@ img {
   clear: both;
 }
 /* chess */
+.transform_translate {
+
+}
 .parent {
-  width: 640px;
-  height: 640px;
+  position: relative;
+  width: 500px;
+  height: 500px;
   background-color: black;
+  margin-bottom: 50px;
 }
 .child {
-  width: 80px;
-  height: 80px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
   background-color: blueviolet;
+}
+.parent_2 {
+  position: relative;
+  width: 500px;
+  height: 500px;
+  background-color: #353e58;
+
+}
+.child_2 {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 200px;
+  height: 200px;
+  background-color: rgb(207, 186, 226);
 }

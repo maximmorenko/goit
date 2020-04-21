@@ -34,33 +34,27 @@ img {
   padding-top: 38px;
 }
 .maim-menu {
-  /* display: inline-block; */
   float: right;
-  width: 476px;
   margin: 0;
   margin-top: 10px;
   padding: 0;
   list-style: none;
   font-style: none;
   font-size: 14px;
-  /* background-color: lawngreen; */
 }
 .maim-menu li {
-  /* display: inline-block; */
   float: left;
 }
 .site-logo {
   display: inline-block;
   margin: 0px;
   padding: 0px;
-  /* vertical-align: middle; */
-}
-.site-logo {
   font-size: 30px;
   font-family: Roboto;
   font-weight: 100;
   text-transform: uppercase;
   text-decoration: none;
+  color: #555252;
 }
 .site-logo::first-letter {
   color: rgb(26, 188, 156);
@@ -108,9 +102,13 @@ margin-right: 30px;
 }
 
 .featured_products-list {
+  float: right;
   margin: 0;
   padding: 0;
   list-style: none;
+}
+.featured_products-list-item li {
+  float: left;
 }
 .featured_products-list-item:nth-child(4n + 4) {
   margin-right: 0;
@@ -119,8 +117,6 @@ margin-right: 30px;
   margin-bottom: 0;
 }
 .featured_products-list-title-link {
-  width: 255px;
-  height: 40px;
   background-color: rgb(50, 50, 50);
 }
 .featured_products-list-title-link a {
@@ -136,28 +132,16 @@ margin-right: 30px;
 .container-list-img {
   display: block;
 }
-
-.featured_products_price {
-  position: absolute;
-  width: 55px;
-  height: 40px;
-  background-color: rgba(250, 250, 250, 0.439);     
-  top: 304px;
-  left: 202px;
-  font-size: 18px;
-  font-family: "Roboto";
-  font-weight: bold;
-  color: rgb(255, 255, 255);
-  text-transform: uppercase;
-  line-height: 2.2;
-  text-align: center;
+.title_price {
+  display: inline-block;
 }
+
 .featured_products-list-item {
   float: left;
   margin-right: 30px;
   margin-bottom: 30px;
   padding: 0;
-  position: relative
+
 }
 .featured_products_title {
   float: left;
@@ -175,16 +159,22 @@ margin-right: 30px;
   padding-left: 14px;
   padding-top: 7px;
 }
-
-/* .featured_products-list-item:hover {
-  background-color: rgb(26, 188, 156);
-} */
+.featured_products_price {
+  margin: 0;
+  float: top;
+  width: 55px;
+  height: 40px;
+  background-color: rgba(250, 250, 250, 0.439);     
+  font-size: 18px;
+  font-family: "Roboto";
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  text-transform: uppercase;
+  line-height: 2.2;
+  text-align: center;
+}
 .featured_products-list-title-link:hover {
   background-color: rgb(26, 188, 156);
-  /* padding-top: 10px;
-  padding-bottom: 10px;
-  padding-right: 131px; */
-
 }
 .featured_products-link:hover {
   background-color: rgb(26, 188, 156);
