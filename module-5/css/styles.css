@@ -6,6 +6,11 @@ html {
 *::after {
   box-sizing: inherit;
 }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
 img {
   display: block;
   max-width: 100%;
@@ -16,6 +21,31 @@ img {
   content: "";
   clear: both;
 }
+ul, li {
+  list-style: none;
+}
+.visually-hidden {
+  /* Удаляем элемент из потока документа */
+  position: absolute;
+  /* Временное решение для неверно произносимого, размазанного текста */
+  white-space: nowrap;
+  /* Устанавливаем минимально возможный размер (некоторые скринридеры игнорируют элементы с нулевой высотой и шириной) */
+  width: 1px;
+  height: 1px;
+  /* Скрываем вылезающий за границы контент */
+  overflow: hidden;
+  /* Сбрасываем любые свойства, которые могут повлиять на размер элемента */
+  border: 0;
+  padding: 0;
+  /* Вырезаем ту часть контента, которая должна отображаться. */
+  /* Устаревшее свойство clip для старых браузеров */
+  clip: rect(0 0 0 0);
+  /* clip-path для новых браузеров. inset(50%) определяет область вставки, которая позволит контенту исчезнуть.  */
+  clip-path: inset(50%);
+  /* Похоже, никто до конца не понимает, почему тут margin: -1px. Кроме того, это приводит к проблемам (читай: https://github.com/h5bp/html5-boilerplate/issues/1985). */
+  margin: -1px;
+}
+/* maim-menu */
 .container_main-nav {
   width: 100%;
   max-width: 1110px;
@@ -25,16 +55,7 @@ img {
   background-color: #e9f0fd;
   height: 676px;
   background-size: cover;
-  /* width: 100%;
-  max-width: 1110px;
-  margin: 0 auto; */
 }
-.clearfix::after {
-  content: "";
-  display: table;
-  clear: both;
-}
-/* maim-menu */
 .main-nav {
   width: 1110px;
   margin: 0 auto;
@@ -42,7 +63,6 @@ img {
   padding-top: 28px;
 }
 .maim-menu {
-  /* display: inline-block; */
   float: right;
   width: 476px;
   margin: 0;
@@ -51,17 +71,15 @@ img {
   list-style: none;
   font-style: none;
   font-size: 14px;
-  /* background-color: lawngreen; */
+  
 }
 .maim-menu li {
-  /* display: inline-block; */
   float: left;
 }
 .site-logo {
   display: inline-block;
   margin: 0px;
   padding: 0px;
-  /* vertical-align: middle; */
 }
 .site-logo {
   font-size: 30px;
@@ -93,20 +111,68 @@ margin-right: 30px;
   color: rgb(26, 188, 156);
 }
 /* carousel */
+
+  /* background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
+    url("../images/header/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff; */
 .carousel {
-  background-image: url('/module-5/img/fon.jpg');
-  height: 600px;
+  background-image: linear-gradient(rgb(0, 0, 0, 0.52), rgb(0, 0, 0, 0.52)), url(../img/fon.jpg);
+  background-repeat: no-repeat;
   background-size: cover;
-  margin: 0;
+  padding-top: 209px;
+  padding-bottom: 285px;
+  color: rgb(255, 255, 255);
 }
-/* main {
-  background-image: url('/module-5/img/fon.jpg');
-  height: 600px;
-  background-size: cover;
-} */
+.container_carousel {
+  width: 1110px;
+  margin: 0 auto;
+}
+.carousel_title
+{
+  font-size: 60px;
+  font-family: "Roboto";
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 82px;
+  text-decoration: none;
+  text-align: center;
+}
+.carousel_content {
+  font-size: 24px;
+  font-family: "Roboto";
+  font-weight: 300;
+  text-transform: uppercase;
+  line-height: 54px;
+  text-decoration: none;
+  margin-top: 10px;
+  margin-left: 180px;
+}
+.button_carousel {
+  background-color: rgb(26, 188, 156);
+  width: 104px;
+  height: 104px;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  cursor: pointer;
+}
+.prev {
+  float: left;
+  background-image: url(../img/prev\ arrow.png);
+}
+.next {
+  float: right;
+  background-image: url(../img/next\ arrow.png);
+}
+.inactive-btn {
+  background-color: rgb(26, 188, 156, .65);
+}
 
 /* new_collection */
-.container_new_collection {
+
+/* .container_new_collection {
   width: 100%;
   max-width: 1110px;
   margin: 0 auto;
@@ -222,9 +288,9 @@ margin-right: 30px;
 }
 .new_collection-link:hover {
   background-color: rgb(26, 188, 156);
-}
+} */
 /* footer */
-.footer {
+/* .footer {
   background-color: #2a477c;
   height: 90px;
   background-size: cover;
@@ -233,7 +299,7 @@ margin-right: 30px;
   margin: 0;
   padding: 0;
   
-}
+} */
 
 
 
