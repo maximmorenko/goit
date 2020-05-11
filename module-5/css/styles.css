@@ -87,6 +87,7 @@ ul, li {
   font-weight: 100;
   text-transform: uppercase;
   text-decoration: none;
+  color: #555252;
 }
 .site-logo::first-letter {
   color: rgb(26, 188, 156);
