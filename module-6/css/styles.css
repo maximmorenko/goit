@@ -11,16 +11,16 @@ html {
   padding: 0;
   box-sizing: inherit;
 }
-img {
+/* img {
   display: block;
   max-width: 100%;
   height: auto;
-}
-.clearfix::after {
+} */
+/* .clearfix::after {
   display: table;
   content: "";
   clear: both;
-}
+} */
 ul, li {
   list-style: none;
 }
@@ -45,314 +45,199 @@ ul, li {
   /* Похоже, никто до конца не понимает, почему тут margin: -1px. Кроме того, это приводит к проблемам (читай: https://github.com/h5bp/html5-boilerplate/issues/1985). */
   margin: -1px;
 }
-/* maim-menu */
+/* header */
 .container_main-nav {
   width: 100%;
-  max-width: 1110px;
+  max-width: 1200px;
   margin: 0 auto;
-}
-.container {
-  background-color: #e9f0fd;
-  height: 676px;
-  background-size: cover;
+  /* background-color: rgb(104, 113, 153); */
 }
 .main-nav {
-  width: 1110px;
+  width: 1200px;
   margin: 0 auto;
-  padding-bottom: 28px;
-  padding-top: 28px;
+  display: flex;
+  margin-top: 26px;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 115px;
 }
 .maim-menu {
-  float: right;
-  width: 476px;
-  margin: 0;
-  margin-top: 10px;
-  padding: 0;
-  list-style: none;
+  text-transform: uppercase;
   font-size: 14px;
-  
+  line-height: 1.2;
+  font-family: "Montserrat";
+  font-weight: 400;
 }
-.maim-menu li {
-  float: left;
+.maim-menu-link {
+  color: #95e1d3;
+}
+.maim-menu:not(:last-child) {
+  margin-right: 58px;
+}
+.maim-menu-list {
+  display: flex;
+}
+.maim-menu-link::after {
+  display: block; 
+  content: "";
+  width: 0%;
+  height: 3px;
+  background-color: rgb(243, 129, 129);
+  margin-top: 10px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s linear;
+}
+.maim-menu-link:hover::after {
+  opacity: 1;
+  visibility: visible;
+  width: 100%;
 }
 .site-logo {
-  display: inline-block;
   margin: 0px;
   padding: 0px;
-}
-.site-logo {
   font-size: 30px;
-  font-family: Roboto;
-  font-weight: 100;
-  text-transform: uppercase;
+  font-family: "Montserrat";
+  font-weight: bold;
   text-decoration: none;
-  color: #555252;
+  color: #95e1d3;
+  line-height: 1.2;
 }
 .site-logo::first-letter {
-  color: rgb(26, 188, 156);
+  text-transform: uppercase;
+  color: #95e1d3;
   font-weight: 900;
 }
-.site-logo:hover {
+/* .site-logo:hover {
   color: rgb(26, 188, 156);
-}
-.maim-menu a {
-  color: #0f0101;
-  text-transform: uppercase;
+} */
+a {
   text-decoration: none;
-  line-height: 14px;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 600;
 }
-.maim-menu li:not(:last-child) {
-margin-right: 30px;
-}
+
 .maim-menu a:hover,
 .maim-menu a:focus {
-  color: rgb(26, 188, 156);
+  color: rgb(243, 129, 129);
 }
-/* carousel */
+/* main */
 
-.carousel {
-  position: relative;
-  background-image: linear-gradient(rgb(0, 0, 0, 0.52), rgb(0, 0, 0, 0.52)), url(../img/fon.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 600px;
-  color: rgb(255, 255, 255);
-}
-.container_carousel {
-  width: 1110px;
+.container {
+  width: 100%;
+  max-width: 1200px;
   margin: 0 auto;
+  /* background-color: khaki; */
 }
-.carousel_title_container {
-  position: absolute;
-  left: 50%;
-  transform: translate(-50%);
-  top: 200px
+
+
+
+/* Amazing_Services */
+.Amazing_Services_wrap {
+  width: 100%;
+  max-width: 1182px;
+  margin: 0 auto;
+  /* background-color: rgb(107, 167, 72); */
+  
 }
-.carousel_title
-{
-  font-size: 60px;
-  font-family: "Roboto";
+.Amazing_Services_title_wrap {
+  /* display: flex; */
+  /* justify-content: center; */
+  align-items: flex-start;
+  width: 1182px;
+  text-align: center;
+}
+/* .bloc1 {
+  width: 100px;
+  height: 100px;
+  background-color: lightcoral;
+}
+.bloc2 {
+  width: 100px;
+  height: 100px;
+  background-color: rgb(82, 151, 60);
+} */
+
+.Amazing_Services_title_cursive{
+  /* font-size: 24px;
+  font-family: "KaushanScript";
+  color: rgb(51, 51, 51);
+  line-height: 1.2; */
+  margin-bottom: 27px;
+}
+.Amazing_Services_title {
+  font-size: 30px;
+  font-family: "Montserrat";
+  color: rgb(51, 51, 51);
   font-weight: bold;
   text-transform: uppercase;
-  line-height: 82px;
-  text-decoration: none;
+  line-height: 1.2;
+  margin-bottom: 63px;
+  /* text-align: center; */
 }
-.carousel_content {
-  font-size: 24px;
-  font-family: "Roboto";
-  font-weight: 300;
-  text-transform: uppercase;
-  line-height: 54px;
-  text-decoration: none;
-  margin-top: 10px;
-}
-.carousel__button_wrapper {
-  position: relative;
-  height: 104px;
-  top: 225px;
-}
-
-.button_carousel {
-  background-color: rgb(26, 188, 156);
-  width: 104px;
-  height: 104px;
-  background-repeat: no-repeat;
-  background-position: center;
-  border: none;
-  cursor: pointer;
-}
-.prev {
-  position: absolute;
-  left: 0;
-  background-image: url(../img/prev\ arrow.png);
-}
-.next {
-  position: absolute;
-  right: 0;
-  background-image: url(../img/next\ arrow.png);
-}
-.inactive-btn {
-  background-color: rgb(26, 188, 156, .65);
-}
-
-/* new_collection */
-
-
-.new_collection {
-  background-color: #e9f0fd;
-}
-
-.container_new_collection {
-  width: 1110px;
-  margin: 0 auto;
-  /* padding-bottom: 100px; */
-}
-
-.container_new_collection_title {
-  margin: 0;
-  padding: 0;
-  font-size: 48px;
-  font-family: Roboto;
-  font-weight: 900;
-  text-transform: uppercase;
-  text-decoration: none;
-  text-align: center;
-  color: #515151;
-  padding-top: 96px;
-  padding-bottom: 80px;
-}
-.container_new_collection_title::after {
+.Amazing_Services_title::after {
   content: "";
   display: block;
-  width: 164px;
-  height: 8px;
-  background-color: rgb(26, 188, 156);
+  width: 60px;
+  height: 3px;
+  background-color: rgb(243, 129, 129);
   margin: 0 auto;
-  margin-top: 32px;
-}
-.card_name_price {
-  position: relative;
-}
-.card_name {
-  float: right;
-  width: 255px;
-  height: 40px;
-  background-color: #323232;
-  margin: 0;
-  padding: 0;
-  font-size: 18px;
-  font-family: Roboto;
-  font-weight: 900;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-  padding-left: 14px;
-  padding-top: 10px;
-}
-.card_price {
-  position: absolute;
-  right: 0;
-  width: 55px;
-  height: 40px;
-  background-color: rgba(255, 255, 255, 0.5);
-  margin: 0;
-  padding: 0;
-  font-size: 18px;
-  font-family: Roboto;
-  font-weight: 900;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-  text-align: center;
-  padding-top: 10px;
+  margin-top: 40px;
 }
 
-.card_name:hover {
-  background-color: rgb(26, 188, 156);
-}
-.new_collection-card {
-  width: 255px;
-  height: 322px;
-  float: left;
-  margin-right: 30px;
-  margin-bottom: 100px;
+.Amazing_Services_list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0;
   padding: 0;
 }
-.new_collection-card:nth-child(4n + 4) {
-  margin-right: 0;
-}
-.new_collection-card:hover .overlay {
-  display: block;
-}
-.new_collection-card_wrapper {
-  position: relative;
-  width: 255px;
-  height: 282px;
-}
-.overlay {
-  position: absolute;
+
+.Amazing_Services_list_item {
+  display: flex;
+  /* justify-content: space-between; */
   width: 100%;
-  height: 100%;
-  background-color: rgb(0, 0, 0, 0.55);
-  top: 0;
-  left: 0;
-  border: 10px solid rgb(255, 255, 255, 0.5);
-  background-clip: padding-box;
-  display: none;
+  max-width: 382px;
+  /* margin-right: 18px; */
+  margin-bottom: 100px;
+  /* background-color: lightcyan; */
+  /* align-items: center; */
 }
-.overlay_list {
-  width: 168px;
-  margin: 0 auto;
-  padding-top: 79px;
-}
-.overlay_list_item {
-  float: left;
-  margin-right: 9px;
-  margin-bottom: 9px;
-}
-.overlay_list_item:nth-child(3n + 3) {
+/* .Amazing_Services_list_item:nth-child(3n + 3) {
   margin-right: 0;
+} */
+.Amazing_Services_list_item:nth-last-child(-n + 3) {
+  margin-bottom: 0;
 }
-button {
-  border: 1px solid rgb(255, 255, 255);
+.Amazing_Services_list_item_wrap {
+  width: 100%;
+  max-width: 300px;
 }
-.overlay_list_item_link {
-  display: block;
-  width: 50px;
-  height: 50px;
-  background: transparent;
+.Amazing_Services_icon_wrap {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  max-width: 82px;
+}
+.Amazing_Services_list_item_title {
+  font-size: 14px;
+  font-family: "Montserrat";
+  font-weight: normal;
+  color: rgb(51, 51, 51);
+  text-transform: uppercase;
+  line-height: 1.2;
+  margin-bottom: 14px;
+}
+.Amazing_Services_list_item_text {
+  font-size: 15px;
+  font-family: "Roboto";
+  color: rgb(153, 153, 153);
+  line-height: 1.6;
 }
 
-.overlay_list_item_link_like {
-  background-image: url(../img/like.png);
-  background-repeat: no-repeat;
-  background-position: center; 
-  cursor: pointer;
-}
-.overlay_list_item_link_arrow {
-  background-image: url(../img/arrow.png);
-  background-repeat: no-repeat;
-  background-position: center; 
-  cursor: pointer;
-}
-.overlay_list_item_link_time {
-  background-image: url(../img/time.png);
-  background-repeat: no-repeat;
-  background-position: center; 
-  cursor: pointer;
-}
-.overlay_list_item_link:hover {
-  background-color: #1abc9c;
-  border: none;
-}
-.overlay_list_item_link_add {
-  display: block;
-  width: 168px;
-  height: 50px;
-  background-color: #323232;
-}
-.overlay_list_item_link_add_to {
-  font-size: 14px;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 400;
-  text-transform: uppercase;
-  text-decoration: none;
-  color: rgb(255, 255, 255);
-  text-align: center;
-  padding-left: 30px;
-  background-image: url(../img/add_to_cart.png);
-  background-repeat: no-repeat;
-  background-position: left 5px center; 
-  cursor: pointer;
-}
-.overlay_list_item_link_add_to:hover {
-  background-color: rgb(26, 188, 156);
-  border: none;
-}
+
+
+
 /* footer */
-.footer {
+/* .footer {
   
   background-color: #323232;
   background-size: cover;
@@ -384,5 +269,15 @@ button {
   color: rgb(26, 188, 156);
   margin-left: 5px;
 }
+.MoGo {
+  font-size: 30px;
+  font-family: "Montserrat";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+  z-index: 100;
+} */
+
 
 
