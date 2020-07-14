@@ -267,7 +267,7 @@ a {
   height: 1px;
   margin: 0 auto;
   margin-top: 78px;
-  margin-bottom: 10px;
+  /* margin-bottom: 10px; */
 }
 .meet_our_team_card_list {
   display: flex;
@@ -309,9 +309,11 @@ a {
 .footer_container {
   display: flex;
   justify-content: space-between;
-  width: 100%;
+  align-items: center;
+  height: 62px;
   max-width: 1200px;
   margin: 0 auto;
+  /* background-color: lightslategrey; */
 }
 .footer_text {
   font-size: 14px;
@@ -331,8 +333,6 @@ a {
   top: 1641.85px;
   z-index: 11;
 }
-
-
 .red_word {
   font-size: 14px;
   font-family: "Montserrat";
@@ -340,6 +340,44 @@ a {
   line-height: 1.2;
   text-align: center;
 }
+.footer_subscribe_container {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center; */
+  width: 380px;
+  height: 40px;
+  /* background-color: lightpink; */
+}
+.email {
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  width: 230px;
+  height: 40px;
+  border: 1px solid rgb(229, 229, 229);
+  font-size: 15px;
+  font-family: "Roboto Light";
+  color: rgb(204, 204, 204);
+  font-style: italic;
+  line-height: 1.6;
+  padding-left: 12px;
+}
+
+.footer_text_link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 150px;
+  background-color: rgb(149, 225, 211);
+  font-size: 14px;
+  font-family: "Montserrat";
+  color: rgb(255, 255, 255);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
 /* .footer {
   
   background-color: #323232;
