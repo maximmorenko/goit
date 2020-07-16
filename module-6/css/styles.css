@@ -203,14 +203,11 @@ a {
   /* justify-content: space-between; */
   width: 100%;
   max-width: 382px;
-  /* margin-right: 18px; */
   margin-bottom: 100px;
   /* background-color: lightcyan; */
   /* align-items: center; */
 }
-/* .Amazing_Services_list_item:nth-child(3n + 3) {
-  margin-right: 0;
-} */
+
 .Amazing_Services_list_item:nth-last-child(-n + 3) {
   margin-bottom: 0;
 }
@@ -243,6 +240,13 @@ a {
   margin-bottom: 86px;
 }
 /* meet our team */
+
+.meet_our_team_wrap {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  /* background-color: mediumaquamarine; */
+}
 .meet_our_team_title_wrap {
   width: 100%;
   max-width: 944px;
@@ -253,13 +257,12 @@ a {
 .meet_our_team_title_text {
   margin-top: 44px;
 }
-.meet_our_team_card_wrap {
+.meet_our_team_container {
   width: 100%;
   max-width: 1200px;
   margin: 0 auto;
-/*   background-color: rgb(250, 200, 200); */
 }
-.meet_our_team_card_wrap::after {
+.meet_our_team_container::after {
   content: "";
   display: block;
   background-color: rgb(229, 229, 229);
@@ -267,18 +270,22 @@ a {
   height: 1px;
   margin: 0 auto;
   margin-top: 78px;
-  /* margin-bottom: 10px; */
 }
-.meet_our_team_card_list {
+.meet_our_team {
   display: flex;
   justify-content: space-between;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  /* background-color: rgb(250, 200, 200); */
 }
 .meet_our_team_card_img {
   width: 380px;
   height: 470px;
   background-color: rgb(180, 180, 180);
-  margin-bottom: 28px;
+  
 }
+
 .meet_our_team_name {
   font-size: 14px;
   font-family: "Montserrat";
@@ -296,7 +303,120 @@ a {
   line-height: 1.6;
   text-align: center;
 }
+/* overlay */
 
+.meet_our_team_card_wrap {
+  position: relative;
+  width: 380px;
+  height: 470px;
+  margin-bottom: 28px;
+}
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-image: -webkit-linear-gradient( 90deg, rgb(252,227,138) 0%, rgb(243,129,129) 100%);
+  opacity: 0.9;
+  transition: 1s linear;
+  display: none;
+
+}
+  /* background-image: url(../img/man_01.jpg); */
+
+.meet_our_team_card:hover .overlay {
+  display: block;
+  /* transform: translate(-10px, -10px); */
+  box-shadow: 10px 10px rgb(149, 225, 211);
+  top: -10px;
+  left: -10px;
+  transition: 1s linear;
+
+  
+}
+/* .meet_our_team_card_img:hover {
+  transform: translate(-10px, -10px);
+} */
+.overlay_list {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  padding-top: 207px;
+}
+.overlay_list_item {
+  margin-right: 1px;
+  
+}
+.overlay_list_item:nth-child(4n + 4) {
+  margin-right: 0;
+}
+button { 
+  border: none;
+}
+.overlay_list_item_link {
+  width: 55px;
+  height: 55px;
+  background: transparent;
+  background-color: rgb(252, 227, 138);
+}
+
+.overlay_list_item_link_facebook {
+  background-image: url(../img/facebook.png);
+  background-repeat: no-repeat;
+  background-position: center; 
+  cursor: pointer;
+}
+.overlay_list_item_link_twitter {
+  background-image: url(../img/twitter.png);
+  background-repeat: no-repeat;
+  background-position: center; 
+  cursor: pointer;
+}
+.overlay_list_item_link_pin {
+  background-image: url(../img/pin.png);
+  background-repeat: no-repeat;
+  background-position: center; 
+  cursor: pointer;
+}
+.overlay_list_item_link_insta {
+  background-image: url(../img/insta.png);
+  background-repeat: no-repeat;
+  background-position: center; 
+  cursor: pointer;
+}
+.overlay_list_item_link:hover {
+  background-color: rgb(149, 225, 211);
+  border: none;
+}
+
+
+
+
+/* .overlay_list_item_link_add {
+  display: block;
+  width: 168px;
+  height: 50px;
+  background-color: #323232;
+}
+.overlay_list_item_link_add_to {
+  font-size: 14px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: rgb(255, 255, 255);
+  text-align: center;
+  padding-left: 30px;
+  background-image: url(../img/add_to_cart.png);
+  background-repeat: no-repeat;
+  background-position: left 5px center; 
+  cursor: pointer;
+}
+.overlay_list_item_link_add_to:hover {
+  background-color: rgb(26, 188, 156);
+  border: none;
+} */
 
 
 
