@@ -1,0 +1,148 @@
+/* roboto-slab-regular - latin */
+@font-face {
+  font-family: 'Roboto Slab';
+  font-style: normal;
+  font-weight: 400;
+  src: local(''),
+       url('../fonts/roboto-slab-v12-latin-regular.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/roboto-slab-v12-latin-regular.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* montserrat-regular - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/montserrat-v14-latin-regular.eot'); /* IE9 Compat Modes */
+  src: local('Montserrat Regular'), local('Montserrat-Regular'),
+       url('../fonts/montserrat-v14-latin-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/montserrat-v14-latin-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/montserrat-v14-latin-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/montserrat-v14-latin-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/montserrat-v14-latin-regular.svg#Montserrat') format('svg'); /* Legacy iOS */
+}
+/* montserrat-700 - latin */
+@font-face {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/montserrat-v14-latin-700.eot'); /* IE9 Compat Modes */
+  src: local('Montserrat Bold'), local('Montserrat-Bold'),
+       url('../fonts/montserrat-v14-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/montserrat-v14-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/montserrat-v14-latin-700.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/montserrat-v14-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/montserrat-v14-latin-700.svg#Montserrat') format('svg'); /* Legacy iOS */
+}
+/* cormorant-italic - latin */
+@font-face {
+  font-family: 'Cormorant';
+  font-style: italic;
+  font-weight: 400;
+  src: local('Cormorant Italic'), local('Cormorant-Italic'),
+       url('../fonts/cormorant-v9-latin-italic.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
+       url('../fonts/cormorant-v9-latin-italic.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+html {
+  box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+ul, li {
+  list-style: none;
+}
+.visually-hidden {
+  /* Удаляем элемент из потока документа */
+  position: absolute;
+  /* Временное решение для неверно произносимого, размазанного текста */
+  white-space: nowrap;
+  /* Устанавливаем минимально возможный размер (некоторые скринридеры игнорируют элементы с нулевой высотой и шириной) */
+  width: 1px;
+  height: 1px;
+  /* Скрываем вылезающий за границы контент */
+  overflow: hidden;
+  /* Сбрасываем любые свойства, которые могут повлиять на размер элемента */
+  border: 0;
+  padding: 0;
+  /* Вырезаем ту часть контента, которая должна отображаться. */
+  /* Устаревшее свойство clip для старых браузеров */
+  clip: rect(0 0 0 0);
+  /* clip-path для новых браузеров. inset(50%) определяет область вставки, которая позволит контенту исчезнуть.  */
+  clip-path: inset(50%);
+  /* Похоже, никто до конца не понимает, почему тут margin: -1px. Кроме того, это приводит к проблемам (читай: https://github.com/h5bp/html5-boilerplate/issues/1985). */
+  margin: -1px;
+}
+
+/* header */
+.container {
+  width: 100%;
+  max-width: 940px;
+  margin: 0 auto;
+  /* background-color: rgb(104, 113, 153); */
+}
+
+.main-nav {
+  width: 940px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 41px;
+  margin-bottom: 87px;
+}
+.maim-menu-list {
+  display: flex;
+}
+.maim-menu {
+  font-size: 19px;
+  font-family: "Montserrat";
+  text-transform: uppercase;
+  line-height: 55px;
+  font-weight: 400;
+}
+.maim-menu:not(:last-child) {
+  margin-right: 40px;
+}
+a {
+  text-decoration: none;
+}
+.maim-menu-link {
+  color: #222222;
+}
+.maim-menu-link:hover {
+  color: #fed136;
+  transition: color 0.3s linear;
+}
+/* services */
+.services_title {
+  font-size: 53px;
+  font-family: "Montserrat";
+  color: rgb(34, 34, 34);
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 100px;
+  text-align: center;
+}
+.services_description {
+  font-size: 21px;
+  font-family: "Cormorant";
+  color: rgb(119, 119, 119);
+  font-style: italic;
+  line-height: 1.2;
+  text-align: center;
+}
+
+
